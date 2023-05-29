@@ -1,0 +1,49 @@
+Backend (API+Database)< -- > DataBase <--> Front End
+Backend deals with flow of Data in Front end and Back end and vice versa
+Database --> Store Data --> View the data stored in and use it for future use
+Store Data, Manipulate Data, View Data, Delete Data
+API - Application Programming Interface
+API looks like a URL.
+API Structure / Requests - 
+Create Request - Post Request(Adds/ Creates New data requests from FE to Database)
+Read Request - GET Request(Fetches/Reads the data stored in the database)
+Update Request - PUT/PATCH Request(Updates existing data in the database)
+Delete Request - Deletes the data from the database)
+
+Different Types of address
+IP address / Mac address / Port address
+Unique address / NIC - Network Inrterface Card / Port address runs locally
+Local link generates unique port number
+
+Front End - UI --> BAsic 
+            UI --> Structure --> HTML
+                   Styling --> CSS
+                   Functionality --> JS
+
+ HTML --> To structure the website
+     Syntax - Tags - is used to define the structure
+
+ <P> Hello World </P>
+
+ DOM
+ <HTML>
+    <Head>
+Pre written codes
+<Title> my first website</Title>
+</Head>
+
+<Body>
+ This part contains the code that generates the website
+<P> Hello World </P>
+</Body>
+</HTML>
+
+Basic Javascript
+
+Data Types
+Number  - any number (Integer + Decimal) 
+String - multiple characters inside "   "
+Boolean - True / False (Logical)
+Char - Any single symbol or letter [inside quotes]
+Array - Elements / Multi dimension Array [] collection of similar type data
+Object - Collection of Key:Value pair{}
