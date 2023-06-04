@@ -22,23 +22,22 @@ function Binary(a){
       // CharAt - Inbuilt function
       // "guvi" change to "GuVi"
 
-        let str = "guvi";
-      let modifiedStr = str.charAt(0).toUpperCase() + str.charAt(1).toLowerCase() + str.charAt(2).toUpperCase() + str.charAt(3).toLowerCase();
+         let Str = "guvi";
+       let modifiedStr = Str.charAt(0).toUpperCase() + Str.charAt(1).toLowerCase() + Str.charAt(2).toUpperCase() + Str.charAt(3).toLowerCase();
 
-     console.log(modifiedStr); // Output: GuVi
+      console.log(modifiedStr); // Output: GuVi
 
     
-      // function abc (str) {
-      //   let s ="guvi"
-      //   for(let i=0; i<str.length; i++){
-      //     if (i%2==0){
-      //       s+= str.charAt(i).toUpper()
-      //     } else {
-      //       s+= str[i]
-      //     }
-      //   } return s
-       
-      // }
-      // let str ="guvi";
-      //   let modifierStr = abc(str);
-      // console.log (modifiedStr);
+        function abc (str) {
+          let s ="Hello"
+          for(let i=0; i<str.length; i++){
+            if (i%2==0){
+              s+= str.charAt(i).toUpperCase()
+            } else {
+              s+= str[i]
+            }
+          }  return s
+          }
+            let str ="Hello";
+          let modifiedstr = abc(str);
+          console.log(modifiedstr);

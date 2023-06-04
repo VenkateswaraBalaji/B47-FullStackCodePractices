@@ -21,3 +21,4 @@ function calculateCombination(n, r) {
   
   console.log(result); // Output: 10
   
+  
