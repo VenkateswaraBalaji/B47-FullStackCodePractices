@@ -1,0 +1,27 @@
+// HTML - Hyper Text Markup Language
+// It is a language which is used to give the basic structure to the language
+// HTML --> Head and Body --> Main content is entered in Body
+// Head --> Title tag (The name of the website in the tab section of any browser)
+
+// Attributes - Values given to a tag so that the values
+// src tag - specify the link to the image
+//alt tag - 
+// img src= alt = "" --> to apply image
+// <strong> to make words to bold</strong>
+// <hr /> to give line to the paragraph
+// <br /> break paragraph tag/ self enclosing tags (opening tag and closing tag) 
+// <i>Italic </i>
+// <ul></ul> bullet point tags
+// <li></li> gives bullet point tags
+// <ol></ol> numbers list tag
+
+// <div> Create a section or club some stuff (s) together in a web page
+// <section> tag
+// <article> tag
+// <span> tag creates a separate section
+// <block> and <inline> tags
+// Example of block tags are <div> <section><article> Doesnt allow anythign beside It
+// Exammple of inline tag is <span> which allows other paragraph or words besides It
+
+// HTML Forms - Used to collect user input which is sent to a server for processing
+
