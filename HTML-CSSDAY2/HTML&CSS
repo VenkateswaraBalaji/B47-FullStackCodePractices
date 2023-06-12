@@ -1,0 +1,41 @@
+// Frontend of Website --> Structure , Styling , Basic Functionalities
+// Structure of the Website - HTMl
+// Styling of the Website - CSS
+// Functionality of Website - JS
+// Basic Structure of HTMl
+<html>
+    <head>
+        <Title>
+ "My Document"
+        </Title>
+    </head>
+    <body>
+        <h1>"Hello World</h1>
+        <p>"Paragraph here</p>
+    </body>
+</html>
+
+// Class and Id tags are attributes which access the tags
+
+// id - is an attribute which is uniquely identifies a HTML tags
+// Example of Unique id attribute
+<h1 id=""Top Heading">"Hello World"</h1>
+//Two or more tags cant have the same id
+
+// Class - like id, its also an attribute which identifies one or more than one HMTL tags
+// Class name need not be unique
+// Example of id attribute
+<h1 class="Heading">"Hello World"</h1>
+<h2 class="Heading">"Hello from Chennai"</h2>
+
+// Through class we get access to multiple tags. Through id we can get access to only one HTML tag
+
+// CSS - Cascading Style Sheets.
+// CSS controls the layput of multiple web pages and saves lot of time
+// Through CSS can set colors - Inline , Internal and External
+
+// Internal HTML tag
+// External HTML tag
+
+// Margin - It gives gap between the tag and its surrounding
+
