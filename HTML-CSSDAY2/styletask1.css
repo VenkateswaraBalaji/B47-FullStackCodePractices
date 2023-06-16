@@ -1,0 +1,30 @@
+/* Tag selector */
+p {
+    color: blue;
+  }
+  
+  /* Class selector */
+  .subtitle {
+    color: green;
+  }
+  
+  /* ID selector */
+  #special {
+    color: red;
+  }
+  
+  /* ID and class combined */
+  #header.title {
+    font-size: 24px;
+  }
+  
+  /* Class and tag combined */
+  .container p {
+    font-weight: bold;
+  }
+  
+  /* ID, class, and tag combined */
+  #content.container p.highlight {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,42 @@
+h1 {
+    color: rgb(37, 37, 173);
+    border: 15px solid color(red);
+   
+}
+h2 {
+    color: rgb(94, 10, 37);
+}
+hr {
+    color: rgb(237, 27, 62);
+}   
+body { background-color: rgb(228, 187, 219);
+    color: rgb(225, 59, 87);
+}
+  #title {
+    font-size: 50px;
+    text-align: center;
+    border: 15px solid rgb(110, 110, 208);
+    
+  }  
+img {
+    height: 250px;
+    width: 170px;
+}
+.movie-bundle{
+    display:inline-block;
+    margin-right: 13px;
+    margin-left: 12px;
+   text-align: center;
+    vertical-align:top;
+    width: 170px;
+}
+
+.movie-name{
+    color: rgb(245, 58, 58);
+    margin-bottom: 0;
+}
+
+.movie-rating {
+    color: rgb(73, 7, 7);
+    margin-bottom: 0;
+}
