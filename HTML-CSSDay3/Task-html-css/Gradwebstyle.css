@@ -1,0 +1,38 @@
+.nav-bar{
+    background-color: rgb(52, 52, 169);
+    height: 30px;
+    padding-top: 10px;
+    position: sticky;
+    top: 50px;
+}
+
+.nav_title{
+    float: left;
+    margin-left: 10px;
+    color: rgb(200, 164, 164);
+    margin-top: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: aqua;
+    border: 10px solid red;
+    margin: 100px;}
+
+.flex-container > div{
+    background-color: antiquewhite;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    height: 300px;
+} 
+   
+body{
+    /* background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 12%, rgba(0,212,255,1) 79%); */
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 82%);
+}

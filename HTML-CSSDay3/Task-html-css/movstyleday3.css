@@ -1,35 +1,37 @@
 h1 {
     color: rgb(37, 37, 173);
-    border: 15px solid color(red);
-   
+     
 }
 h2 {
     color: rgb(94, 10, 37);
 }
-hr {
-    color: rgb(237, 27, 62);
-}   
-body { background-color: rgb(228, 187, 219);
+
+body { 
+background-color: rgb(228, 187, 219);
     color: rgb(225, 59, 87);
 }
   #title {
     font-size: 50px;
     text-align: center;
     border: 15px solid rgb(110, 110, 208);
-    
-    
+   
   }  
 img {
     height: 250px;
-    width: 170px;
+    width: 180px;
 }
-.movie-bundle{
-    display:inline-block;
-    margin-right: 13px;
-    margin-left: 12px;
-   text-align: center;
-    vertical-align:top;
-    width: 170px;
+
+.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container > div {
+    vertical-align: bottom;
+     width: 180px;
+    
 }
 
 .movie-name{

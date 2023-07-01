@@ -1,0 +1,71 @@
+
+.Box {
+    background-color: antiquewhite;
+    color: blue;
+    width: 450px;
+    height: 250px;
+    border: 15px solid green;
+    border-radius: 20px;
+    margin-top: 20px;
+margin-left: 50px;}
+  
+ #firstbox{
+    height: 260px;
+    width: 260px;
+}
+
+#secondbox {
+    height: 250px;
+    width:250px;
+    position:relative;
+    left: 50px;
+    bottom: 75px;
+}
+
+#thirdbox {
+    height: 240px;
+    width:240px;
+    position:relative;
+    left: 50px;
+    top: 40px;
+}
+.Detail {
+    width: 200px;
+    height: 80px;
+    border: 15px solid rgb(144, 29, 136);
+    border-radius: 30px;
+    margin: 10px;}
+    
+    .Box1 {
+        background-color: antiquewhite;
+        color: rgb(162, 125, 196);
+        width: 300px;
+        height: 350px;
+        border: 15px solid rgb(74, 22, 146);
+        border-radius: 30px;
+        margin-top: 250px;
+    margin-left: 250px;}
+      
+    .Detail1 {
+        background-color: rgb(160, 69, 69);
+        width: 300x;
+        height: 80px;
+        border: 15px solid rgb(125, 12, 96);
+        border-radius: 30px;
+        margin: 10px;}
+        .Box2 {
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 180px;
+            border: 15px solid rgb(106, 15, 74);
+            border-radius: 20px;
+            margin-top: 100px;
+        margin-left: 250px;}          
+        .Detail2 {
+            background-color: aquamarine;
+            width: 160px;
+            height: 80px;
+            border: 15px solid rgb(0, 51, 128);
+            border-radius: 30px;
+            margin: 10px;}
+         

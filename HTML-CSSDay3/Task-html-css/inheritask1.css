@@ -1,0 +1,14 @@
+.outerbox{
+    width: 500px;
+    height: 500px;
+    background-color: violet;
+   border: 10px solid saddlebrown;
+    }
+
+    .innerbox{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        background-color: tomato;
+        border: inherit;
+    }

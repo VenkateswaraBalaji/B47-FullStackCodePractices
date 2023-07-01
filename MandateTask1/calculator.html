@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href = "./calcstyle.css"/>    
+
+</head>
+<body>
+  <div class="calculator container">
+    <div class="result" id="result">0</div>
+    <div class="buttons">
+      <button class="btn btn-primary" onclick="appendCharacter('7')">7</button>
+      <button class="btn btn-primary" onclick="appendCharacter('8')">8</button>
+      <button class="btn btn-primary" onclick="appendCharacter('9')">9</button>
+      <button class="btn btn-primary" onclick="appendOperator('+')">+</button>
+      <br>
+      <button class="btn btn-primary" onclick="appendCharacter('4')">4</button>
+      <button class="btn btn-primary" onclick="appendCharacter('5')">5</button>
+      <button class="btn btn-primary" onclick="appendCharacter('6')">6</button>
+      <button class="btn btn-primary" onclick="appendOperator('-')">-</button>
+      <br>
+      <button class="btn btn-primary" onclick="appendCharacter('1')">1</button>
+      <button class="btn btn-primary" onclick="appendCharacter('2')">2</button>
+      <button class="btn btn-primary" onclick="appendCharacter('3')">3</button>
+      <button class="btn btn-primary" onclick="appendOperator('*')">*</button>
+      <br>
+      <button class="btn btn-primary" onclick="appendCharacter('0')">0</button>
+      <button class="btn btn-primary" onclick="appendOperator('/')">/</button>
+      <button class="btn btn-primary" onclick="appendOperator('%')">%</button>
+      <button class="btn btn-success" onclick="calculate()">=</button>
+      <br>
+      <button class="btn btn-danger" onclick="clearResult()">C</button>
+      <button class="btn btn-info" onclick="addToMemory()">M+</button>
+      <button class="btn btn-info" onclick="subtractFromMemory()">M-</button>
+      <button class="btn btn-info" onclick="clearMemory()">MC</button>
+    </div>
+  </div>
+
+  <script>
+    var resultElement = document.getElementById('result');
+    var currentExpression = '';
+    var memory = parseFloat(localStorage.getItem('memory')) || 0;
+
+    function appendCharacter(character) {
+      currentExpression += character;
+      updateResult();
+    }
+
+    function appendOperator(operator) {
+      currentExpression += ' ' + operator + ' ';
+      updateResult();
+    }
+
+    function calculate() {
+      try {
+        var result = evalInfixExpression(currentExpression);
+        currentExpression = result.toString();
+        updateResult();
+      } catch (error) {
+        currentExpression = '';
+        updateResult('Error');
+      }
+    }
+
+    function clearResult() {
+      currentExpression = '';
+      updateResult();
+    }
+
+    function updateResult(error) {
+      if (error) {
+        resultElement.style.color = 'red';
+        resultElement.textContent = error;
+      } else {
+        resultElement.style.color = 'black';
+        resultElement.textContent = currentExpression;
+      }
+    }
+
+    function addToMemory() {
+      memory += evalInfixExpression(currentExpression);
+      localStorage.setItem('memory', memory.toString());
+    }
+
+    function subtractFromMemory() {
+      memory -= evalInfixExpression(currentExpression);
+      localStorage.setItem('memory', memory.toString());
+    }
+
+    function clearMemory() {
+      memory = 0;
+      localStorage.removeItem('memory');
+    }
+
+    // Helper function to evaluate infix expressions
+    function evalInfixExpression(expression) {
+      return eval(expression);
+    }
+  </script>
+</body>
+</html>

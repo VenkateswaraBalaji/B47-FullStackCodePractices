@@ -1,0 +1,11 @@
+CSS Grid Layout Module
+Grid Container
+Can use media query or flex wrap wrap instead of Grid
+<grid-template-column> auto auto 5fr</grid-template-column>
+auto defines the column in <grid-template-column></grid-template-column>
+<inline-grid></inline-grid>
+grid element
+grid columns
+grid row
+grid gap 
+Mobile First Approach --> Generally designs website first then uses media query for the phone

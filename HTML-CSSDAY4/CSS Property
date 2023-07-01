@@ -1,0 +1,18 @@
+Overflow - Visible, Hidden, scroll, auto
+X direction Overflow, y direction overflow will be deducted by auto
+
+CSS- Dropdown Menu
+> Hoverable Dropdown
+> z-index will work only when position is absolute
+> Hover is a <Pseudo-class></Pseudo-class>
+// Example of Pseudo-class
+<div class="abcd"> Hello </div>
+.abcd:hover{
+
+}
+>Measurements --> <px></px>,<rem></rem>,<em></em>
+> Font -->
+Google Fonts
+
+> Responsive Web Design - RWD
+> CSS Media Queries - Width of the screen is important
