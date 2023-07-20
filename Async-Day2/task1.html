@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd or Even Checker</title>
+    <script src="path/to/promise.js"></script>
+</head>
+<body>
+    <h1>Odd or Even Checker</h1>
+    <p>Enter a number:</p>
+    <input type="number" id="numberInput">
+    <button onclick="checkOddOrEven()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function isOddOrEven(number) {
+            return new Promise((resolve, reject) => {
+                if (isNaN(number)) {
+                    reject(new Error("Please enter a valid number."));
+                } else {
+                    resolve(number % 2 === 0 ? "even" : "odd");
+                }
+            });
+        }
+
+        function checkOddOrEven() {
+            var number = parseInt(document.getElementById("numberInput").value);
+
+            isOddOrEven(number)
+                .then(result => {
+                    document.getElementById("result").innerHTML = number + " is an " + result + " number.";
+                })
+                .catch(error => {
+                    document.getElementById("result").innerHTML = error.message;
+                });
+        }
+    </script>
+</body>
+</html>

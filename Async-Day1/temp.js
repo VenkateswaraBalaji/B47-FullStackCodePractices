@@ -38,74 +38,157 @@ setTimeout(() => {
 //6.Bill 2000
 //7.Leaving 1000
 
-function party(){
-    setTimeout(() => {
-        console.log("Booked");
-        setTimeout(()=> {
-            console.log("Ordered")
-            setTimeout(()=> {
-                console.log("Prepared");
-                setTimeout(()=> {
-                    console.log("Served");
-                    setTimeout(()=> {
-                        console.log("Eating");
-                        setTimeout(()=> {
-                            console.log("Billed");
-                            setTimeout(()=> {
-                                console.log("Left")
-        },1000) 
-             }, 2000)
-                },    5000)
-                    },2000);
-                        }, 4000);
-                            }, 3000);
-                                }, 2000);
-                                        }
-function booking(){
-    console.log("Booked")
-}
-party(booking);
-function party() {
-     setTimeout(() => {
-         console.log("Booked")
-         setTimeout(() => {
+// function party(){
+//     setTimeout(() => {
+//         console.log("Booked");
+//         setTimeout(()=> {
+//             console.log("Ordered")
+//             setTimeout(()=> {
+//                 console.log("Prepared");
+//                 setTimeout(()=> {
+//                     console.log("Served");
+//                     setTimeout(()=> {
+//                         console.log("Eating");
+//                         setTimeout(()=> {
+//                             console.log("Billed");
+//                             setTimeout(()=> {
+//                                 console.log("Left")
+//         },1000) 
+//              }, 2000)
+//                 },    5000)
+//                     },2000);
+//                         }, 4000);
+//                             }, 3000);
+//                                 }, 2000);
+//                                         }
+// function booking(){
+//     console.log("Booked")
+// }
+// party(booking);
+// function party() {
+//      setTimeout(() => {
+//          console.log("Booked")
+//          setTimeout(() => {
 
-             console.log("Ordered")
-             setTimeout(() => {
+//              console.log("Ordered")
+//              setTimeout(() => {
 
-                 console.log("Prepared");
+//                  console.log("Prepared");
 
-                 setTimeout(() => {
+//                  setTimeout(() => {
 
-                     console.log("Served");
+//                      console.log("Served");
 
-                     setTimeout(() => {
+//                      setTimeout(() => {
 
-                         console.log("Eating");
+//                          console.log("Eating");
 
-                         setTimeout(() => {
+//                          setTimeout(() => {
 
-                             console.log("Billed");
+//                              console.log("Billed");
 
-                             setTimeout(() => {
+//                              setTimeout(() => {
 
-                                 console.log("Left")
+//                                  console.log("Left")
 
-                             }, 1000);
+//                              }, 1000);
 
-                        }, 2000);
+//                         }, 2000);
 
-                     }, 5000);
+//                      }, 5000);
 
-                 }, 2000);
+//                  }, 2000);
 
-             }, 4000);
+//              }, 4000);
 
-         }, 3000);
+//          }, 3000);
 
-     }, 2000);
+//      }, 2000);
 
- }
+//  }
  
 
- party();
+//  party();
+
+// Restaurant 
+//1.Booking 2000
+//2.Ordering 3000
+//3.Preparing 4000
+//4.Serving 2000
+//5.Eating 5000
+//6.Bill 2000
+//7.Leaving 1000
+
+function bookTheTable(callback){
+    setTimeout(() => {
+        console.log("Booked");
+        callback();
+    }, 2000)
+}
+
+function placeTheOrder(callback){
+    setTimeout(() => {
+        console.log("Ordered");
+        callback();
+    }, 3000)
+}
+
+function preparingTheFood(callback){
+    setTimeout(() => {
+        console.log("Prepared");
+        callback();
+    }, 5000)
+}
+
+function servingTheFood(callback){
+    setTimeout(() => {
+        console.log("Served");
+        callback();
+    }, 2000)
+}
+
+function EatingTheFood(callback){
+    setTimeout(() => {
+        console.log("Eaten");
+        callback();
+    }, 5000)
+}
+
+function billingTheFood(callback){
+    setTimeout(() => {
+        console.log("Billed");
+        callback();
+    }, 2000)
+}
+
+function leaving(callback){
+    setTimeout(() => {
+        console.log("Left");
+        callback();
+    }, 1000)
+}
+
+bookTheTable(function() {
+    placeTheOrder(function(){
+        preparingTheFood(function(){
+            servingTheFood(function(){
+                EatingTheFood(function(){
+                    billingTheFood(function(){
+                      leaving(function(){})
+                    })
+                })
+            })
+        })
+    })
+})
+
+// Callback Hell
+// Pyramid of doom 
+// Code become difficult to read and maintain
+// Multiple async operation are dependent on each other or on extended sequentially
+// callback - callback nested
+
+// Promise- Promise is invented to solve the problem and to better handle the task
+// Promise --> Pending --> Resolve --> .then .then (block which is known as Promise chain) / Reject--> .catch --> 
+// --> Successfully completion of task
+// potential error or bug

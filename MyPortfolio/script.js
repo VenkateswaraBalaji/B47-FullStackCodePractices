@@ -22,7 +22,7 @@ generateStars();
 function sendMail() {
     var subject = document.getElementById("subject").value;
     var body = document.getElementById("message").value;
-    window.location.href = "mailto:dorashekhar1999@gmail.com?subject="+ subject +"&body=" + body;
+    window.location.href = "mailto:lakshmanan.venkateswarabalaji@gmail.com?subject="+ subject +"&body=" + body;
 }
 
 Array.from(document.getElementsByClassName("glass-morphism")).forEach((element) => {

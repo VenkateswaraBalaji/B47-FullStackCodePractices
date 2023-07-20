@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+    <script src="path/to/promise.js"></script>
+</head>
+<body>
+    <h1>Palindrome Checker</h1>
+    <p>Enter a string:</p>
+    <input type="text" id="stringInput">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function isPalindrome(str) {
+            return new Promise((resolve, reject) => {
+                if (typeof str !== "string") {
+                    reject(new Error("Input must be a valid string."));
+                } else {
+                    const cleanedString = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+                    const reversedString = cleanedString.split('').reverse().join('');
+                    resolve(cleanedString === reversedString);
+                }
+            });
+        }
+
+        function checkPalindrome() {
+            var inputString = document.getElementById("stringInput").value;
+
+            isPalindrome(inputString)
+                .then(isPalindrome => {
+                    const resultMessage = isPalindrome ? "It is a palindrome." : "It is not a palindrome.";
+                    document.getElementById("result").innerHTML = resultMessage;
+                })
+                .catch(error => {
+                    document.getElementById("result").innerHTML = error.message;
+                });
+        }
+    </script>
+</body>
+</html>
